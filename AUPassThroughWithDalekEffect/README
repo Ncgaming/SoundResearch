@@ -1,0 +1,11 @@
+This code is really rough.  It was used for several examples, so you need to strategically
+comment/uncomment various calls in viewDidLoad or setUpAUConnectionsWithRenderCallback to
+get various code paths working.
+
+Please check http://www.subfurther.com/blog in May 2010 for a nicer version.
+
+Thanks for attending 360iDev!
+
+--Chris
+invalidname@gmail.com
+@invalidname

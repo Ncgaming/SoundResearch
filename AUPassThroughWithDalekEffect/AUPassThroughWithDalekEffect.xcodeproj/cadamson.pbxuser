@@ -1,0 +1,307 @@
+// !$*UTF8*$!
+{
+	015FF6B81157B4F000CBE938 /* DalekVoice */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 1;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = DalekVoice;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+		variableFormatDictionary = {
+		};
+	};
+	015FF6DC1157B50A00CBE938 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	015FF6DD1157B50A00CBE938 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	017A441E1185D42C00AC2740 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 0186F48711766ECC00705882 /* README */;
+		name = "README: 12";
+		rLen = 0;
+		rLoc = 366;
+		rType = 0;
+		vrLen = 366;
+		vrLoc = 0;
+	};
+	0186F3E01175FEE400705882 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 010E95C2115CE37E00B3483E /* speaker_badge_150.png */;
+	};
+	0186F48711766ECC00705882 /* README */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {709, 296}}";
+			sepNavSelRange = "{366, 0}";
+			sepNavVisRange = "{0, 366}";
+		};
+	};
+	01979C0E11885FF40021B948 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* AUPassThroughWithDalekEffectViewController.h */;
+		name = "AUPassThroughWithDalekEffectViewController.h: 2";
+		rLen = 0;
+		rLoc = 49;
+		rType = 0;
+		vrLen = 351;
+		vrLoc = 0;
+	};
+	01979C0F11885FF40021B948 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* AUPassThroughWithDalekEffectAppDelegate.m */;
+		name = "AUPassThroughWithDalekEffectAppDelegate.m: 2";
+		rLen = 0;
+		rLoc = 46;
+		rType = 0;
+		vrLen = 388;
+		vrLoc = 0;
+	};
+	01979C1B118860270021B948 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* AUPassThroughWithDalekEffectAppDelegate.h */;
+		name = "AUPassThroughWithDalekEffectAppDelegate.h: 3";
+		rLen = 0;
+		rLoc = 49;
+		rType = 0;
+		vrLen = 481;
+		vrLoc = 3;
+	};
+	01979CF1118867310021B948 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* AUPassThroughWithDalekEffectViewController.m */;
+		name = "AUPassThroughWithDalekEffectViewController.m: 99";
+		rLen = 0;
+		rLoc = 3191;
+		rType = 0;
+		vrLen = 345;
+		vrLoc = 3;
+	};
+	01979D2A1188684F0021B948 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* AUPassThroughWithDalekEffect-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIconFile,
+		);
+		name = "/Users/cadamson/Desktop/post to conf sites/360idev/AUPassThroughWithDalekEffect/AUPassThroughWithDalekEffect-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	01979D9711886A330021B948 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* AUPassThroughWithDalekEffect-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+			CFBundleIconFile,
+		);
+		name = "/Users/cadamson/Desktop/post to conf sites/360idev/AUPassThroughWithDalekEffect/AUPassThroughWithDalekEffect-Info.plist";
+		rLen = 0;
+		rLoc = 0;
+	};
+	01B9FF7D115E361000AB4E66 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 01B9FF7E115E361000AB4E66 /* CoreAudioTypes.h */;
+		name = "CoreAudioTypes.h: 462";
+		rLen = 134;
+		rLoc = 22908;
+		rType = 0;
+		vrLen = 1147;
+		vrLoc = 22588;
+	};
+	01B9FF7E115E361000AB4E66 /* CoreAudioTypes.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = CoreAudioTypes.h;
+		path = /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/System/Library/Frameworks/CoreAudio.framework/Headers/CoreAudioTypes.h;
+		sourceTree = "<absolute>";
+	};
+	1D3623240D0F684500981E51 /* AUPassThroughWithDalekEffectAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {698, 315}}";
+			sepNavSelRange = "{49, 0}";
+			sepNavVisRange = "{3, 481}";
+		};
+	};
+	1D3623250D0F684500981E51 /* AUPassThroughWithDalekEffectAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {692, 495}}";
+			sepNavSelRange = "{46, 0}";
+			sepNavVisRange = "{0, 388}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* AUPassThroughWithDalekEffect */ = {
+		activeExec = 0;
+		executables = (
+			015FF6B81157B4F000CBE938 /* DalekVoice */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* AUPassThroughWithDalekEffectViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {692, 480}}";
+			sepNavSelRange = "{49, 0}";
+			sepNavVisRange = "{0, 351}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* AUPassThroughWithDalekEffectViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {712, 4800}}";
+			sepNavSelRange = "{3191, 0}";
+			sepNavVisRange = "{3, 345}";
+			sepNavWindowFrame = "{{15, 133}, {862, 613}}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 015FF6B81157B4F000CBE938 /* DalekVoice */;
+		activeSDKPreference = iphoneos3.1.3;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* AUPassThroughWithDalekEffect */;
+		addToTargets = (
+		);
+		breakpoints = (
+		);
+		codeSenseManager = 015FF6DD1157B50A00CBE938 /* Code sense */;
+		executables = (
+			015FF6B81157B4F000CBE938 /* DalekVoice */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXBookmarksDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXBookmarksDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					200,
+					311,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXBookmarksDataSource_LocationID,
+					PBXBookmarksDataSource_NameID,
+					PBXBookmarksDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					401,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					513,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFindDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFindDataSource_LocationID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					200,
+					527,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFindDataSource_MessageID,
+					PBXFindDataSource_LocationID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					473,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 294152470;
+			PBXWorkspaceStateSaveDate = 294152470;
+		};
+		perUserProjectItems = {
+			017A441E1185D42C00AC2740 /* PBXTextBookmark */ = 017A441E1185D42C00AC2740 /* PBXTextBookmark */;
+			0186F3E01175FEE400705882 /* PBXBookmark */ = 0186F3E01175FEE400705882 /* PBXBookmark */;
+			01979C0E11885FF40021B948 /* PBXTextBookmark */ = 01979C0E11885FF40021B948 /* PBXTextBookmark */;
+			01979C0F11885FF40021B948 /* PBXTextBookmark */ = 01979C0F11885FF40021B948 /* PBXTextBookmark */;
+			01979C1B118860270021B948 /* PBXTextBookmark */ = 01979C1B118860270021B948 /* PBXTextBookmark */;
+			01979CF1118867310021B948 /* PBXTextBookmark */ = 01979CF1118867310021B948 /* PBXTextBookmark */;
+			01979D2A1188684F0021B948 /* PlistBookmark */ = 01979D2A1188684F0021B948 /* PlistBookmark */;
+			01979D9711886A330021B948 /* PlistBookmark */ = 01979D9711886A330021B948 /* PlistBookmark */;
+			01B9FF7D115E361000AB4E66 /* PBXTextBookmark */ = 01B9FF7D115E361000AB4E66 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 015FF6DC1157B50A00CBE938 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	8D1107310486CEB800E47090 /* AUPassThroughWithDalekEffect-Info.plist */ = {
+		uiCtxt = {
+			sepNavWindowFrame = "{{48, 133}, {862, 613}}";
+		};
+	};
+}

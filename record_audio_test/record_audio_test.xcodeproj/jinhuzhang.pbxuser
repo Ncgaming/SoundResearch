@@ -1,0 +1,218 @@
+// !$*UTF8*$!
+{
+	1D3623240D0F684500981E51 /* record_audio_testAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {708, 409}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{174, 348}";
+		};
+	};
+	1D3623250D0F684500981E51 /* record_audio_testAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1965, 1300}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{1762, 243}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* record_audio_test */ = {
+		activeExec = 0;
+		executables = (
+			C0DCF02712D45D4B0028015F /* record_audio_test */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* record_audio_testViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {798, 670}}";
+			sepNavSelRange = "{916, 33}";
+			sepNavVisRange = "{0, 954}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* record_audio_testViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1244, 2537}}";
+			sepNavSelRange = "{770, 35}";
+			sepNavVisRange = "{370, 1462}";
+			sepNavWindowFrame = "{{1017, 46}, {1231, 1012}}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = C0DCF02712D45D4B0028015F /* record_audio_test */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* record_audio_test */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* record_audio_test */,
+		);
+		codeSenseManager = C0DCF03112D45D520028015F /* Code sense */;
+		executables = (
+			C0DCF02712D45D4B0028015F /* record_audio_test */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					620,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 315908129;
+			PBXWorkspaceStateSaveDate = 315908129;
+		};
+		perUserProjectItems = {
+			C0DCF05012D45F3B0028015F /* PBXTextBookmark */ = C0DCF05012D45F3B0028015F /* PBXTextBookmark */;
+			C0DCF05112D45F3B0028015F /* PBXTextBookmark */ = C0DCF05112D45F3B0028015F /* PBXTextBookmark */;
+			C0DCF11312D4722B0028015F /* PlistBookmark */ = C0DCF11312D4722B0028015F /* PlistBookmark */;
+			C0DCF11412D4722B0028015F /* PBXTextBookmark */ = C0DCF11412D4722B0028015F /* PBXTextBookmark */;
+			C0DCF11512D4722B0028015F /* PBXTextBookmark */ = C0DCF11512D4722B0028015F /* PBXTextBookmark */;
+			C0DCF11612D4722B0028015F /* PBXTextBookmark */ = C0DCF11612D4722B0028015F /* PBXTextBookmark */;
+			C0DCF11812D4722B0028015F /* PBXTextBookmark */ = C0DCF11812D4722B0028015F /* PBXTextBookmark */;
+		};
+		sourceControlManager = C0DCF03012D45D520028015F /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	C0DCF02712D45D4B0028015F /* record_audio_test */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = record_audio_test;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	C0DCF03012D45D520028015F /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	C0DCF03112D45D520028015F /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	C0DCF05012D45F3B0028015F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* record_audio_testAppDelegate.h */;
+		name = "record_audio_testAppDelegate.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 348;
+		vrLoc = 174;
+	};
+	C0DCF05112D45F3B0028015F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* record_audio_testAppDelegate.m */;
+		name = "record_audio_testAppDelegate.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 243;
+		vrLoc = 1762;
+	};
+	C0DCF11312D4722B0028015F /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* record_audio_test-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/jinhuzhang/Desktop/record_audio_test/record_audio_test-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	C0DCF11412D4722B0028015F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* record_audio_testViewController.h */;
+		name = "record_audio_testViewController.h: 33";
+		rLen = 33;
+		rLoc = 916;
+		rType = 0;
+		vrLen = 954;
+		vrLoc = 0;
+	};
+	C0DCF11512D4722B0028015F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* record_audio_testViewController.m */;
+		name = "record_audio_testViewController.m: 27";
+		rLen = 35;
+		rLoc = 770;
+		rType = 0;
+		vrLen = 1462;
+		vrLoc = 370;
+	};
+	C0DCF11612D4722B0028015F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C0DCF11712D4722B0028015F /* AVAudioSession.h */;
+		rLen = 1;
+		rLoc = 22;
+		rType = 1;
+	};
+	C0DCF11712D4722B0028015F /* AVAudioSession.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = AVAudioSession.h;
+		path = /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVAudioSession.h;
+		sourceTree = "<absolute>";
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {798, 1613}}";
+			sepNavSelRange = "{614, 60}";
+			sepNavVisRange = "{0, 982}";
+		};
+	};
+	C0DCF11812D4722B0028015F /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C0DCF11912D4722B0028015F /* AVAudioSession.h */;
+		name = "AVAudioSession.h: 23";
+		rLen = 60;
+		rLoc = 614;
+		rType = 0;
+		vrLen = 982;
+		vrLoc = 0;
+	};
+	C0DCF11912D4722B0028015F /* AVAudioSession.h */ = {
+		isa = PBXFileReference;
+		name = AVAudioSession.h;
+		path = /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS4.2.sdk/System/Library/Frameworks/AVFoundation.framework/Headers/AVAudioSession.h;
+		sourceTree = "<absolute>";
+	};
+}
