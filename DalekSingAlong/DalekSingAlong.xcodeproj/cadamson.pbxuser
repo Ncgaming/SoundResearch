@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	0191909C11871FA200F74E67 /* DalekSingAlong */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = DalekSingAlong;
+		savedGlobals = {
+		};
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	019190AF11871FA800F74E67 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	019190B011871FA800F74E67 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	01979CA8118862990021B948 /* Read me first - license.txt */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {2966, 238}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 1656}";
+		};
+	};
+	01979CD3118865000021B948 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623240D0F684500981E51 /* DalekSingAlongAppDelegate.h */;
+		name = "DalekSingAlongAppDelegate.h: 3";
+		rLen = 0;
+		rLoc = 35;
+		rType = 0;
+		vrLen = 371;
+		vrLoc = 0;
+	};
+	01979CD4118865000021B948 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 01979CA8118862990021B948 /* Read me first - license.txt */;
+		name = "Read me first - license.txt: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 1656;
+		vrLoc = 0;
+	};
+	01979CD5118865000021B948 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* DalekSingAlongAppDelegate.m */;
+		name = "DalekSingAlongAppDelegate.m: 3";
+		rLen = 0;
+		rLoc = 35;
+		rType = 0;
+		vrLen = 332;
+		vrLoc = 0;
+	};
+	01979CD6118865000021B948 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* MixExperiment1-Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = "/Users/cadamson/Desktop/post to conf sites/360idev/DalekSingAlong/MixExperiment1-Info.plist";
+		rLen = 0;
+		rLoc = 9223372036854775808;
+	};
+	01BDB9BC118AE17C00BAB591 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 01BDB9BD118AE17C00BAB591 /* AudioFile.h */;
+		name = "AudioFile.h: 971";
+		rLen = 48;
+		rLoc = 46100;
+		rType = 0;
+		vrLen = 841;
+		vrLoc = 45758;
+	};
+	01BDB9BD118AE17C00BAB591 /* AudioFile.h */ = {
+		isa = PBXFileReference;
+		lastKnownFileType = sourcecode.c.h;
+		name = AudioFile.h;
+		path = /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.3.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioFile.h;
+		sourceTree = "<absolute>";
+	};
+	01BDB9D7118AE43400BAB591 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF60DDB3853001CB0EB /* DalekSingAlongViewController.h */;
+		name = "DalekSingAlongViewController.h: 22";
+		rLen = 18;
+		rLoc = 433;
+		rType = 0;
+		vrLen = 367;
+		vrLoc = 172;
+	};
+	01BDB9E1118AECAC00BAB591 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* DalekSingAlongViewController.m */;
+		name = "DalekSingAlongViewController.m: 174";
+		rLen = 0;
+		rLoc = 5644;
+		rType = 0;
+		vrLen = 627;
+		vrLoc = 5056;
+	};
+	01BDB9EA118AF69B00BAB591 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* DalekSingAlongViewController.m */;
+		name = "DalekSingAlongViewController.m: 174";
+		rLen = 0;
+		rLoc = 5675;
+		rType = 0;
+		vrLen = 461;
+		vrLoc = 0;
+	};
+	1D3623240D0F684500981E51 /* DalekSingAlongAppDelegate.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {707, 300}}";
+			sepNavSelRange = "{35, 0}";
+			sepNavVisRange = "{0, 371}";
+		};
+	};
+	1D3623250D0F684500981E51 /* DalekSingAlongAppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {707, 480}}";
+			sepNavSelRange = "{35, 0}";
+			sepNavVisRange = "{0, 332}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* DalekSingAlong */ = {
+		activeExec = 0;
+		executables = (
+			0191909C11871FA200F74E67 /* DalekSingAlong */,
+		);
+	};
+	28D7ACF60DDB3853001CB0EB /* DalekSingAlongViewController.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {707, 705}}";
+			sepNavSelRange = "{433, 18}";
+			sepNavVisRange = "{172, 367}";
+		};
+	};
+	28D7ACF70DDB3853001CB0EB /* DalekSingAlongViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {712, 7530}}";
+			sepNavSelRange = "{5675, 0}";
+			sepNavVisRange = "{0, 461}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 0191909C11871FA200F74E67 /* DalekSingAlong */;
+		activeSDKPreference = iphonesimulator3.1.3;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* DalekSingAlong */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* DalekSingAlong */,
+		);
+		codeSenseManager = 019190B011871FA800F74E67 /* Code sense */;
+		executables = (
+			0191909C11871FA200F74E67 /* DalekSingAlong */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXExecutablesDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXExecutablesDataSource_NameID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					22,
+					300,
+					417,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXExecutablesDataSource_ActiveFlagID,
+					PBXExecutablesDataSource_NameID,
+					PBXExecutablesDataSource_CommentsID,
+				);
+			};
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					529,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXConfiguration.PBXTargetDataSource.PBXTargetDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					489,
+					60,
+					20,
+					48,
+					43,
+					43,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXTargetDataSource_PrimaryAttribute,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 294319700;
+			PBXWorkspaceStateSaveDate = 294319700;
+		};
+		perUserProjectItems = {
+			01979CD3118865000021B948 /* PBXTextBookmark */ = 01979CD3118865000021B948 /* PBXTextBookmark */;
+			01979CD4118865000021B948 /* PBXTextBookmark */ = 01979CD4118865000021B948 /* PBXTextBookmark */;
+			01979CD5118865000021B948 /* PBXTextBookmark */ = 01979CD5118865000021B948 /* PBXTextBookmark */;
+			01979CD6118865000021B948 /* PlistBookmark */ = 01979CD6118865000021B948 /* PlistBookmark */;
+			01BDB9BC118AE17C00BAB591 /* PBXTextBookmark */ = 01BDB9BC118AE17C00BAB591 /* PBXTextBookmark */;
+			01BDB9D7118AE43400BAB591 /* PBXTextBookmark */ = 01BDB9D7118AE43400BAB591 /* PBXTextBookmark */;
+			01BDB9E1118AECAC00BAB591 /* PBXTextBookmark */ = 01BDB9E1118AECAC00BAB591 /* PBXTextBookmark */;
+			01BDB9EA118AF69B00BAB591 /* PBXTextBookmark */ = 01BDB9EA118AF69B00BAB591 /* PBXTextBookmark */;
+		};
+		sourceControlManager = 019190AF11871FA800F74E67 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+}
