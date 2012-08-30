@@ -1,0 +1,265 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F65F60DA15EF7B2400BADCFD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65F60D915EF7B2400BADCFD /* UIKit.framework */; };
+		F65F60DC15EF7B2400BADCFD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65F60DB15EF7B2400BADCFD /* Foundation.framework */; };
+		F65F60DE15EF7B2400BADCFD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65F60DD15EF7B2400BADCFD /* CoreGraphics.framework */; };
+		F65F60E415EF7B2400BADCFD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F65F60E215EF7B2400BADCFD /* InfoPlist.strings */; };
+		F65F60E615EF7B2400BADCFD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F60E515EF7B2400BADCFD /* main.m */; };
+		F65F60EA15EF7B2400BADCFD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F60E915EF7B2400BADCFD /* AppDelegate.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F65F60D515EF7B2400BADCFD /* BeOthers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BeOthers.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F65F60D915EF7B2400BADCFD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F65F60DB15EF7B2400BADCFD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F65F60DD15EF7B2400BADCFD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F65F60E115EF7B2400BADCFD /* BeOthers-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "BeOthers-Info.plist"; sourceTree = "<group>"; };
+		F65F60E315EF7B2400BADCFD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F65F60E515EF7B2400BADCFD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F65F60E715EF7B2400BADCFD /* BeOthers-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BeOthers-Prefix.pch"; sourceTree = "<group>"; };
+		F65F60E815EF7B2400BADCFD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		F65F60E915EF7B2400BADCFD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F65F60D215EF7B2400BADCFD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F65F60DA15EF7B2400BADCFD /* UIKit.framework in Frameworks */,
+				F65F60DC15EF7B2400BADCFD /* Foundation.framework in Frameworks */,
+				F65F60DE15EF7B2400BADCFD /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F65F60CA15EF7B2400BADCFD = {
+			isa = PBXGroup;
+			children = (
+				F65F60DF15EF7B2400BADCFD /* BeOthers */,
+				F65F60D815EF7B2400BADCFD /* Frameworks */,
+				F65F60D615EF7B2400BADCFD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F65F60D615EF7B2400BADCFD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F65F60D515EF7B2400BADCFD /* BeOthers.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F65F60D815EF7B2400BADCFD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F65F60D915EF7B2400BADCFD /* UIKit.framework */,
+				F65F60DB15EF7B2400BADCFD /* Foundation.framework */,
+				F65F60DD15EF7B2400BADCFD /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F65F60DF15EF7B2400BADCFD /* BeOthers */ = {
+			isa = PBXGroup;
+			children = (
+				F65F60E815EF7B2400BADCFD /* AppDelegate.h */,
+				F65F60E915EF7B2400BADCFD /* AppDelegate.m */,
+				F65F60E015EF7B2400BADCFD /* Supporting Files */,
+			);
+			path = BeOthers;
+			sourceTree = "<group>";
+		};
+		F65F60E015EF7B2400BADCFD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F65F60E115EF7B2400BADCFD /* BeOthers-Info.plist */,
+				F65F60E215EF7B2400BADCFD /* InfoPlist.strings */,
+				F65F60E515EF7B2400BADCFD /* main.m */,
+				F65F60E715EF7B2400BADCFD /* BeOthers-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F65F60D415EF7B2400BADCFD /* BeOthers */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F65F60ED15EF7B2400BADCFD /* Build configuration list for PBXNativeTarget "BeOthers" */;
+			buildPhases = (
+				F65F60D115EF7B2400BADCFD /* Sources */,
+				F65F60D215EF7B2400BADCFD /* Frameworks */,
+				F65F60D315EF7B2400BADCFD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BeOthers;
+			productName = BeOthers;
+			productReference = F65F60D515EF7B2400BADCFD /* BeOthers.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F65F60CC15EF7B2400BADCFD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = F65F60CF15EF7B2400BADCFD /* Build configuration list for PBXProject "BeOthers" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = F65F60CA15EF7B2400BADCFD;
+			productRefGroup = F65F60D615EF7B2400BADCFD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F65F60D415EF7B2400BADCFD /* BeOthers */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F65F60D315EF7B2400BADCFD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F65F60E415EF7B2400BADCFD /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F65F60D115EF7B2400BADCFD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F65F60E615EF7B2400BADCFD /* main.m in Sources */,
+				F65F60EA15EF7B2400BADCFD /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F65F60E215EF7B2400BADCFD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F65F60E315EF7B2400BADCFD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F65F60EB15EF7B2400BADCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F65F60EC15EF7B2400BADCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F65F60EE15EF7B2400BADCFD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeOthers/BeOthers-Prefix.pch";
+				INFOPLIST_FILE = "BeOthers/BeOthers-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F65F60EF15EF7B2400BADCFD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "BeOthers/BeOthers-Prefix.pch";
+				INFOPLIST_FILE = "BeOthers/BeOthers-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F65F60CF15EF7B2400BADCFD /* Build configuration list for PBXProject "BeOthers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F65F60EB15EF7B2400BADCFD /* Debug */,
+				F65F60EC15EF7B2400BADCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F65F60ED15EF7B2400BADCFD /* Build configuration list for PBXNativeTarget "BeOthers" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F65F60EE15EF7B2400BADCFD /* Debug */,
+				F65F60EF15EF7B2400BADCFD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F65F60CC15EF7B2400BADCFD /* Project object */;
+}
