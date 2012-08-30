@@ -29,7 +29,6 @@
 		F65F612115EF7F7C00BADCFD /* NetworkContents.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F611A15EF7F7C00BADCFD /* NetworkContents.m */; };
 		F65F612215EF7F7C00BADCFD /* SKProduct+LocalizedPrice.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F611C15EF7F7C00BADCFD /* SKProduct+LocalizedPrice.m */; };
 		F65F612B15EF7FF900BADCFD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65F612415EF7FF900BADCFD /* AudioToolbox.framework */; };
-		F65F612C15EF7FF900BADCFD /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65F612515EF7FF900BADCFD /* AudioUnit.framework */; };
 		F65F612D15EF7FF900BADCFD /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65F612615EF7FF900BADCFD /* AVFoundation.framework */; };
 		F65F612E15EF7FF900BADCFD /* CoreAudio.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65F612715EF7FF900BADCFD /* CoreAudio.framework */; };
 		F65F612F15EF7FF900BADCFD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65F612815EF7FF900BADCFD /* CoreFoundation.framework */; };
@@ -61,6 +60,7 @@
 		F65F618315EF815700BADCFD /* AdsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F65F617E15EF815600BADCFD /* AdsViewController.xib */; };
 		F65F618415EF815700BADCFD /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F618015EF815700BADCFD /* WebViewController.m */; };
 		F65F618515EF815700BADCFD /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F65F618115EF815700BADCFD /* WebViewController.xib */; };
+		F65F618715EF83DA00BADCFD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65F618615EF83DA00BADCFD /* StoreKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,7 +106,6 @@
 		F65F611C15EF7F7C00BADCFD /* SKProduct+LocalizedPrice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "SKProduct+LocalizedPrice.m"; sourceTree = "<group>"; };
 		F65F612315EF7F8900BADCFD /* marcoHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = marcoHelper.h; sourceTree = "<group>"; };
 		F65F612415EF7FF900BADCFD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		F65F612515EF7FF900BADCFD /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = System/Library/Frameworks/AudioUnit.framework; sourceTree = SDKROOT; };
 		F65F612615EF7FF900BADCFD /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		F65F612715EF7FF900BADCFD /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		F65F612815EF7FF900BADCFD /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
@@ -165,6 +164,7 @@
 		F65F617F15EF815600BADCFD /* WebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewController.h; sourceTree = "<group>"; };
 		F65F618015EF815700BADCFD /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		F65F618115EF815700BADCFD /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		F65F618615EF83DA00BADCFD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,8 +172,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F65F618715EF83DA00BADCFD /* StoreKit.framework in Frameworks */,
 				F65F612B15EF7FF900BADCFD /* AudioToolbox.framework in Frameworks */,
-				F65F612C15EF7FF900BADCFD /* AudioUnit.framework in Frameworks */,
 				F65F612D15EF7FF900BADCFD /* AVFoundation.framework in Frameworks */,
 				F65F612E15EF7FF900BADCFD /* CoreAudio.framework in Frameworks */,
 				F65F612F15EF7FF900BADCFD /* CoreFoundation.framework in Frameworks */,
@@ -191,8 +191,8 @@
 		F65F60CA15EF7B2400BADCFD = {
 			isa = PBXGroup;
 			children = (
+				F65F618615EF83DA00BADCFD /* StoreKit.framework */,
 				F65F612415EF7FF900BADCFD /* AudioToolbox.framework */,
-				F65F612515EF7FF900BADCFD /* AudioUnit.framework */,
 				F65F612615EF7FF900BADCFD /* AVFoundation.framework */,
 				F65F612715EF7FF900BADCFD /* CoreAudio.framework */,
 				F65F612815EF7FF900BADCFD /* CoreFoundation.framework */,
@@ -586,6 +586,7 @@
 		F65F60EE15EF7B2400BADCFD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BeOthers/BeOthers-Prefix.pch";
 				INFOPLIST_FILE = "BeOthers/BeOthers-Info.plist";
@@ -597,6 +598,7 @@
 		F65F60EF15EF7B2400BADCFD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BeOthers/BeOthers-Prefix.pch";
 				INFOPLIST_FILE = "BeOthers/BeOthers-Info.plist";
