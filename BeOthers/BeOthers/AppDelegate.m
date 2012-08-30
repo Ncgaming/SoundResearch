@@ -7,18 +7,29 @@
 //
 
 #import "AppDelegate.h"
+#import "RootViewController.h"
 
 @implementation AppDelegate
 
 @synthesize window = _window;
+@synthesize rootVC = _rootVC;
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    // no sleeping.
+    [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
+    
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
+    self.rootVC = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];
+    
+	UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:self.rootVC];
+    
+	self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
+    
     return YES;
+
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
