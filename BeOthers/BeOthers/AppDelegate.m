@@ -18,7 +18,8 @@
 {
     // no sleeping.
     [[UIApplication sharedApplication] setIdleTimerDisabled:YES];
-    
+    [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:UIStatusBarAnimationFade];
+
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     self.rootVC = [[RootViewController alloc] initWithNibName:@"RootViewController" bundle:nil];

@@ -61,6 +61,11 @@
 		F65F618415EF815700BADCFD /* WebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F65F618015EF815700BADCFD /* WebViewController.m */; };
 		F65F618515EF815700BADCFD /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F65F618115EF815700BADCFD /* WebViewController.xib */; };
 		F65F618715EF83DA00BADCFD /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65F618615EF83DA00BADCFD /* StoreKit.framework */; };
+		F6AE785B15F0596C00711217 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AE785A15F0596C00711217 /* Accelerate.framework */; };
+		F6AE785E15F0598300711217 /* libz.1.1.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AE785D15F0598300711217 /* libz.1.1.3.dylib */; };
+		F6AE786015F0598C00711217 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AE785F15F0598C00711217 /* libsqlite3.dylib */; };
+		F6AE786215F0599400711217 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AE786115F0599400711217 /* CFNetwork.framework */; };
+		F6AE786415F059D100711217 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AE786315F059D100711217 /* SystemConfiguration.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -165,6 +170,11 @@
 		F65F618015EF815700BADCFD /* WebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewController.m; sourceTree = "<group>"; };
 		F65F618115EF815700BADCFD /* WebViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		F65F618615EF83DA00BADCFD /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F6AE785A15F0596C00711217 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		F6AE785D15F0598300711217 /* libz.1.1.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.1.3.dylib; path = usr/lib/libz.1.1.3.dylib; sourceTree = SDKROOT; };
+		F6AE785F15F0598C00711217 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		F6AE786115F0599400711217 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F6AE786315F059D100711217 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +182,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6AE786415F059D100711217 /* SystemConfiguration.framework in Frameworks */,
+				F6AE786215F0599400711217 /* CFNetwork.framework in Frameworks */,
+				F6AE786015F0598C00711217 /* libsqlite3.dylib in Frameworks */,
+				F6AE785E15F0598300711217 /* libz.1.1.3.dylib in Frameworks */,
+				F6AE785B15F0596C00711217 /* Accelerate.framework in Frameworks */,
 				F65F618715EF83DA00BADCFD /* StoreKit.framework in Frameworks */,
 				F65F612B15EF7FF900BADCFD /* AudioToolbox.framework in Frameworks */,
 				F65F612D15EF7FF900BADCFD /* AVFoundation.framework in Frameworks */,
@@ -191,6 +206,11 @@
 		F65F60CA15EF7B2400BADCFD = {
 			isa = PBXGroup;
 			children = (
+				F6AE786315F059D100711217 /* SystemConfiguration.framework */,
+				F6AE786115F0599400711217 /* CFNetwork.framework */,
+				F6AE785F15F0598C00711217 /* libsqlite3.dylib */,
+				F6AE785D15F0598300711217 /* libz.1.1.3.dylib */,
+				F6AE785A15F0596C00711217 /* Accelerate.framework */,
 				F65F618615EF83DA00BADCFD /* StoreKit.framework */,
 				F65F612415EF7FF900BADCFD /* AudioToolbox.framework */,
 				F65F612615EF7FF900BADCFD /* AVFoundation.framework */,
@@ -626,6 +646,7 @@
 				F65F60EF15EF7B2400BADCFD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

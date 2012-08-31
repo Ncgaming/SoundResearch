@@ -8,6 +8,7 @@
 
 #import "RootViewController.h"
 #import "MainViewController.h"
+#import "ViewPositionHelper.h"
 
 @interface RootViewController ()
 
@@ -30,6 +31,9 @@
     // Do any additional setup after loading the view from its nib.
     MainViewController *mainVC = [[MainViewController alloc]init];
     mainVC.rootViewController = self;
+    [self.view addSubview:mainVC.view];
+    [ViewPositionHelper setPosition:CGPointMake(0, 150) ofView:mainVC.view];
+    
     
     
 }
