@@ -148,6 +148,12 @@
 #pragma mark -
 #pragma mark Read audio files into memory
 
+-(void) updateAudioFile
+{
+    sourceURLArray[0] = (CFURLRef) [recordedTmpFile retain];;
+    [self readAudioFilesIntoMemory];
+}
+
 - (void) readAudioFilesIntoMemory {
     
     for (int audioFile = 0; audioFile < NUM_FILES; ++audioFile)  {
@@ -400,7 +406,7 @@
     //............................................................................
     // Multichannel Mixer unit Setup
     
-    UInt32 busCount   = 2;    // bus count for mixer unit input
+    UInt32 busCount   = NUM_FILES;    // bus count for mixer unit input
     UInt32 guitarBus  = 0;    // mixer unit bus 0 will be stereo and will take the guitar sound
     UInt32 beatsBus   = 1;    // mixer unit bus 1 will be mono and will take the beats sound
     
@@ -813,6 +819,7 @@ void audioRouteChangeListenerCallback (
         isRecording = NO;
         [self.recordbtn setTitle:@"Record" forState:UIControlStateNormal];
         [recorder stop];
+        [self updateAudioFile];
     }
     else
     {

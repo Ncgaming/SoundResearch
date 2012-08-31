@@ -12,7 +12,7 @@
 #import <AudioToolbox/AudioToolbox.h>
 
 @class RootViewController;
-#define NUM_FILES 2
+#define NUM_FILES 1
 
 typedef struct {
     
