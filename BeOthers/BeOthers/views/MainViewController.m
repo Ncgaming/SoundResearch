@@ -38,7 +38,7 @@
 @synthesize mixerUnit;                  // the Multichannel Mixer unit
 @synthesize playing;                    // Boolean flag to indicate whether audio is playing or not
 @synthesize interruptedDuringPlayback;  // Boolean flag to indicate whether audio was playing when an interruption arrived
-
+@synthesize mySoundStructArrayPtr = _mySoundStructArrayPtr;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -48,6 +48,7 @@
         self.interruptedDuringPlayback = NO;
         
         [self setupAudioSession];
+        [self FFTSetup];
         [self obtainSoundFileURLs];
         [self setupStereoStreamFormat];
         [self setupMonoStreamFormat];
@@ -58,6 +59,18 @@
     }
     return self;
 }
+
+void fixedPointToSInt16( SInt32 * source, SInt16 * target, int length ) {
+    
+    int i;
+    
+    for(i = 0;i < length; i++ ) {
+        target[i] =  (SInt16) (source[i] >> 9);
+        
+    }
+    
+}
+
 
 - (void)viewDidLoad
 {
@@ -98,6 +111,80 @@
     sourceURLArray[0]   = (CFURLRef) [guitarLoop retain];
     sourceURLArray[1]   = (CFURLRef) [beatsLoop retain];
 }
+
+- (void) setupSInt16StreamFormat {
+    
+    // Stream format for Signed 16 bit integers
+    //
+    // note: as of ios5 this works for signal channel mic/line input (not stereo)
+    // and for mono audio generators (like synths) which pull no device data
+    
+    //    This obtains the byte size of the type for use in filling in the ASBD.
+    size_t bytesPerSample = sizeof (AudioSampleType);	// Sint16
+    //    NSLog (@"size of AudioSampleType: %lu", bytesPerSample);
+	
+    // Fill the application audio format struct's fields to define a linear PCM, 
+    //        stereo, noninterleaved stream at the hardware sample rate.
+    SInt16StreamFormat.mFormatID          = kAudioFormatLinearPCM;
+    SInt16StreamFormat.mFormatFlags       = kAudioFormatFlagsCanonical;
+    SInt16StreamFormat.mBytesPerPacket    = bytesPerSample;
+    SInt16StreamFormat.mFramesPerPacket   = 1;
+    SInt16StreamFormat.mBytesPerFrame     = bytesPerSample;
+    SInt16StreamFormat.mChannelsPerFrame  = 1;                  // 1 indicates mono
+    SInt16StreamFormat.mBitsPerChannel    = 8 * bytesPerSample;
+    SInt16StreamFormat.mSampleRate        = graphSampleRate;
+	
+    NSLog (@"The SInt16 (mono) stream format:");
+    [self printASBD: SInt16StreamFormat];
+    
+    
+    
+}
+
+- (void) FFTSetup {
+	
+	// I'm going to just convert everything to 1024
+	
+	
+	// on the simulator the callback gets 512 frames even if you set the buffer to 1024, so this is a temp workaround in our efforts
+	// to make the fft buffer = the callback buffer, 
+	
+	
+	// for smb it doesn't matter if frame size is bigger than callback buffer
+	
+	UInt32 maxFrames = 1024;    // fft size
+	
+	
+	// setup input and output buffers to equal max frame size
+	
+	dataBuffer = (void*)malloc(maxFrames * sizeof(SInt16));
+	outputBuffer = (float*)malloc(maxFrames *sizeof(float));
+	analysisBuffer = (float*)malloc(maxFrames *sizeof(float));
+	
+	// set the init stuff for fft based on number of frames
+	
+	fftLog2n = log2f(maxFrames);		// log base2 of max number of frames, eg., 10 for 1024
+	fftN = 1 << fftLog2n;					// actual max number of frames, eg., 1024 - what a silly way to compute it
+    
+    
+	fftNOver2 = maxFrames/2;                // half fft size
+	fftBufferCapacity = maxFrames;          // yet another way of expressing fft size
+	fftIndex = 0;                           // index for reading frame data in callback
+	
+	// split complex number buffer
+	//fftA.realp = (float *)malloc(fftNOver2 * sizeof(float));		// 
+	//fftA.imagp = (float *)malloc(fftNOver2 * sizeof(float));		// 
+	
+	
+	// zero return indicates an error setting up internal buffers
+	
+	//fftSetup = vDSP_create_fftsetup(fftLog2n, FFT_RADIX2);
+    //if( fftSetup == (FFTSetup) 0) {
+    //    NSLog(@"Error - unable to allocate FFT setup buffers" );
+	//}
+	
+}
+
 
 - (void) setupStereoStreamFormat {
     
@@ -446,7 +533,10 @@
         // Setup the struture that contains the input render callback 
         AURenderCallbackStruct inputCallbackStruct;
         inputCallbackStruct.inputProc        = &inputRenderCallback;
-        inputCallbackStruct.inputProcRefCon  = soundStructArray;
+        self.mySoundStructArrayPtr = soundStructArray;
+        inputCallbackStruct.inputProcRefCon  = self;
+        
+        
         
         NSLog (@"Registering the render callback with mixer unit input bus %u", busNumber);
         // Set a callback for the specified node's specified input
@@ -553,7 +643,8 @@ static OSStatus inputRenderCallback (
                                      //        AudioBufferList.
                                      ) {
     
-    soundStructPtr    soundStructPointerArray   = (soundStructPtr) inRefCon;
+    MainViewController *root = (MainViewController*) inRefCon;
+    soundStructPtr    soundStructPointerArray   = root.mySoundStructArrayPtr;
     UInt32            frameTotalForSound        = soundStructPointerArray[inBusNumber].frameCount;
     BOOL              isStereo                  = soundStructPointerArray[inBusNumber].isStereo;
     
@@ -728,6 +819,43 @@ void audioRouteChangeListenerCallback (
        
     DLog(@"initialize recorder completed");
 }
+
+void ConvertInt16ToFloat(MainViewController *THIS, void *buf, float *outputBuf, size_t capacity) {
+	AudioConverterRef converter;
+	OSStatus err;
+	
+	size_t bytesPerSample = sizeof(float);
+	AudioStreamBasicDescription outFormat = {0};
+	outFormat.mFormatID = kAudioFormatLinearPCM;
+	outFormat.mFormatFlags = kAudioFormatFlagIsFloat | kAudioFormatFlagIsPacked;
+	outFormat.mBitsPerChannel = 8 * bytesPerSample;
+	outFormat.mFramesPerPacket = 1;
+	outFormat.mChannelsPerFrame = 1;	
+	outFormat.mBytesPerPacket = bytesPerSample * outFormat.mFramesPerPacket;
+	outFormat.mBytesPerFrame = bytesPerSample * outFormat.mChannelsPerFrame;		
+	outFormat.mSampleRate = THIS->graphSampleRate;
+	
+	const AudioStreamBasicDescription inFormat = THIS->SInt16StreamFormat;
+	
+	UInt32 inSize = capacity*sizeof(SInt16);
+	UInt32 outSize = capacity*sizeof(float);
+	
+	// this is the famed audio converter
+	
+	err = AudioConverterNew(&inFormat, &outFormat, &converter);
+	if(noErr != err) {
+		NSLog(@"error in audioConverterNew: %ld", err);
+	}
+	
+	
+	err = AudioConverterConvertBuffer(converter, inSize, buf, &outSize, outputBuf);
+	if(noErr != err) {
+		NSLog(@"error in audioConverterConvertBuffer: %ld", err);
+	}
+	
+}
+
+
 
 #pragma mark -
 #pragma mark Utility methods

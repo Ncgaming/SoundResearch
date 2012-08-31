@@ -15,7 +15,6 @@
 #define NUM_FILES 1
 
 typedef struct {
-    
     BOOL                 isStereo;           // set to true if there is data in the audioDataRight member
     UInt32               frameCount;         // the total number of frames in the audio data
     UInt32               sampleNumber;       // the next audio sample to play
@@ -33,16 +32,46 @@ typedef struct {
     // Before using an AudioStreamBasicDescription struct you must initialize it to 0. However, because these ASBDs
     // are declared in external storage, they are automatically initialized to 0.
     AudioStreamBasicDescription     stereoStreamFormat;
-    AudioStreamBasicDescription     monoStreamFormat;
+    AudioStreamBasicDescription     monoStreamFormat; 
+    AudioStreamBasicDescription    SInt16StreamFormat;		// signed 16 bit int sample format
+
     AUGraph                         processingGraph;
     BOOL                            playing;
     BOOL                            interruptedDuringPlayback;
     AudioUnit                       mixerUnit;
+    
+    // fft
+    
+	//FFTSetup fftSetup;			// fft predefined structure required by vdsp fft functions
+	//COMPLEX_SPLIT fftA;			// complex variable for fft
+	int fftLog2n;               // base 2 log of fft size
+    int fftN;                   // fft size
+    int fftNOver2;              // half fft size
+	size_t fftBufferCapacity;	// fft buffer size (in samples)
+	size_t fftIndex;            // read index pointer in fft buffer 
+    
+    // working buffers for sample data
+    
+	void *dataBuffer;               //  input buffer from mic/line
+	float *outputBuffer;            //  fft conversion buffer
+	float *analysisBuffer;          //  fft analysis buffer
+    SInt16 *conversionBufferLeft;   // for data conversion from fixed point to integer
+    SInt16 *conversionBufferRight;   // for data conversion from fixed point to integer
+    
+    // convolution 
+    
+   	float *filterBuffer;        // impusle response buffer
+    int filterLength;           // length of filterBuffer
+    float *signalBuffer;        // signal buffer
+    int signalLength;           // signal length
+    float *resultBuffer;        // result buffer
+    int resultLength;           // result length
 
 }
 @property(nonatomic, strong) RootViewController *rootViewController;
 @property (retain, nonatomic) IBOutlet UIButton *playbtn;
 @property (retain, nonatomic) IBOutlet UIButton *recordbtn;
+@property (nonatomic) soundStructPtr mySoundStructArrayPtr;
 - (IBAction)tappedPlay:(id)sender;
 - (IBAction)tappedRecord:(id)sender;
 
