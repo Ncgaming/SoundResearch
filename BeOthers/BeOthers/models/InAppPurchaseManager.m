@@ -108,11 +108,9 @@ return [InAppPurchaseManager sharedInAppPurchaseManager];
 {
     if ([productId isEqualToString:kInAppPurchaseUkulele])
     {
-        [AppSettings get].hasPurchasedUkulele = YES;
     }
     else if ([productId isEqualToString:kInAppPurchaseStarterPack])
     {
-        [AppSettings get].hasPurchasedStarterPack = YES;
     }
 }
 

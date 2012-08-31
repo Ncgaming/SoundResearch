@@ -25,8 +25,8 @@
     NSURL * recordedTmpFile;
 	AVAudioRecorder * recorder;
 	NSError * error;
-    AVAudioPlayer * m_pLongMusicPlayer;
     NSMutableDictionary* recordSetting;
+    AVAudioPlayer * avPlayer;
     
     float sampleRate;
     int channels;
@@ -53,7 +53,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    sampleRate = 44100;
+    sampleRate = 44100.0;
     channels = 2;
     [self initializeAudioSession];
     [self initializeRecorder];
@@ -86,11 +86,6 @@
     [audioSession setCategory:AVAudioSessionCategoryPlayAndRecord error: &error];
     [audioSession setPreferredHardwareSampleRate:sampleRate error:&error];
     sampleRate = [audioSession currentHardwareSampleRate];
-
-    NSString *musicFilePath = [[NSBundle mainBundle] pathForResource:@"44th Street Long" ofType:@"caf"];       //创建音乐文件路径
-	NSURL *musicURL = [[NSURL alloc] initFileURLWithPath:musicFilePath];  
-	
-	m_pLongMusicPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:musicURL error:nil];
 
     DLog(@"initialize audio session completed");
 
@@ -127,11 +122,17 @@
     {
         isPlaying = NO;
         [self.playbtn setTitle:@"Play" forState:UIControlStateNormal];
+        [avPlayer stop];
     }
     else
     {
         isPlaying = YES;
         [self.playbtn setTitle:@"Stop" forState:UIControlStateNormal];
+        AVAudioSession *session = [AVAudioSession sharedInstance];
+        [session setCategory:AVAudioSessionCategoryAmbient error:&(error)];
+        avPlayer = [[AVAudioPlayer alloc] initWithContentsOfURL:recordedTmpFile error:&error];
+        [avPlayer prepareToPlay];
+        [avPlayer play];
     }
 }
 
@@ -146,24 +147,29 @@
     {
         isRecording = NO;
         [self.recordbtn setTitle:@"Record" forState:UIControlStateNormal];
+        [recorder stop];
     }
     else
     {
         isRecording = YES;
         [self.recordbtn setTitle:@"Stop Record" forState:UIControlStateNormal];
+        AVAudioSession *session = [AVAudioSession sharedInstance];
+        [session setCategory:AVAudioSessionCategoryPlayAndRecord error:&(error)];
         
         int currentFileNum = [AppSettings get].totalFileNum;
         NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-        NSString *documentDirectory = [paths objectAtIndex:currentFileNum];
-        [AppSettings get].totalFileNum = currentFileNum+1;
+        NSLog(@"issue 1 %@",paths);
+        NSString *documentDirectory = [paths objectAtIndex:0];
         
-        recordedTmpFile = [NSURL fileURLWithPath:[documentDirectory stringByAppendingPathComponent: [NSString stringWithFormat: @"%@.%@", @"a", @"caf"]]];
+        recordedTmpFile = [NSURL fileURLWithPath:[documentDirectory stringByAppendingPathComponent: [NSString stringWithFormat: @"%i.%@", currentFileNum, @"caf"]]];
         DLog(@"Audio saved in file : %@",recordedTmpFile);
         
         recorder = [[ AVAudioRecorder alloc] initWithURL:recordedTmpFile settings:recordSetting error:&error];
         
         [recorder prepareToRecord];
         [recorder record];
+        [AppSettings get].totalFileNum = currentFileNum+1;
+
 
     }
 
