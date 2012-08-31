@@ -66,6 +66,8 @@
 		F6AE786015F0598C00711217 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AE785F15F0598C00711217 /* libsqlite3.dylib */; };
 		F6AE786215F0599400711217 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AE786115F0599400711217 /* CFNetwork.framework */; };
 		F6AE786415F059D100711217 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6AE786315F059D100711217 /* SystemConfiguration.framework */; };
+		F6AE789815F0B0B600711217 /* beatsMono.caf in Resources */ = {isa = PBXBuildFile; fileRef = F6AE789615F0B0B600711217 /* beatsMono.caf */; };
+		F6AE789915F0B0B600711217 /* guitarStereo.caf in Resources */ = {isa = PBXBuildFile; fileRef = F6AE789715F0B0B600711217 /* guitarStereo.caf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -175,6 +177,8 @@
 		F6AE785F15F0598C00711217 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		F6AE786115F0599400711217 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		F6AE786315F059D100711217 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F6AE789615F0B0B600711217 /* beatsMono.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = beatsMono.caf; sourceTree = "<group>"; };
+		F6AE789715F0B0B600711217 /* guitarStereo.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = guitarStereo.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +287,8 @@
 		F65F60F115EF7BF600BADCFD /* assets */ = {
 			isa = PBXGroup;
 			children = (
+				F6AE789615F0B0B600711217 /* beatsMono.caf */,
+				F6AE789715F0B0B600711217 /* guitarStereo.caf */,
 			);
 			path = assets;
 			sourceTree = "<group>";
@@ -490,6 +496,8 @@
 				F65F60FF15EF7DB400BADCFD /* MainViewController.xib in Resources */,
 				F65F618315EF815700BADCFD /* AdsViewController.xib in Resources */,
 				F65F618515EF815700BADCFD /* WebViewController.xib in Resources */,
+				F6AE789815F0B0B600711217 /* beatsMono.caf in Resources */,
+				F6AE789915F0B0B600711217 /* guitarStereo.caf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
